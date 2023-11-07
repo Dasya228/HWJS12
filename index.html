@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Country</title>
+</head>
+<body>
+<div class="container">
+    <h1 id="text">Страны</h1>
+    <label for="all">Все страны</label>
+    <input type="radio" id="all" checked name="type">
+    <label for="search">Поиск стран</label>
+    <input type="radio" name="type" id="search">
+
+
+    <div class="search-wrapper hidden">
+       <div class="btn-wrapper">
+           <h2>Поиск стран</h2>
+           <input type="text" id="searchInput" placeholder="Введите страну...">
+           <button id="searchBtn">Поиск</button>
+       </div>
+       <div class="card-box">
+           <h2>Все данные о стране</h2>
+           <h3>Страна: <span id="name"></span></h3>
+           <p>Столица страны: <span id="capital"></span>
+           <p>Валюта страны: <span id="valut"></span>
+           <p>Символ валюты: <span id="symbol"></span></p>
+           <p>Регион страны: <span id="region"></span></p>
+           <div class="flag-container">
+               <p>Флаг страны:</p>
+               <img src="" alt="" id="flag" style="width: 200px">
+           </div>
+           <p>Официальный язык: <span id="language"></span></p>
+           <p>Google maps: <span id="maps"></span></p>
+
+       </div>
+
+
+        <div class="country">
+
+        </div>
+    </div>
+    <div class="row">
+
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
